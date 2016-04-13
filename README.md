@@ -4,7 +4,7 @@
 
 Remark App has the next architecture:
 
-![Overall architecture](/img/overall_architecture.png)
+![Overall architecture](https://raw.githubusercontent.com/alterego-labs/remark_docker_orchestra/master/imgs/overall_architecture.png)
 
 Regarding to the schema above the whole system consists from the following components:
 
@@ -18,4 +18,4 @@ Regarding to the schema above the whole system consists from the following compo
 
 Server side we want manage by *docker* and this fact affects on server archtecture at all. So the architecture is on the following picture:
 
-![Server architecture](/img/server_architecture.png)
+![Server architecture](https://raw.githubusercontent.com/alterego-labs/remark_docker_orchestra/master/imgs/server_architecture.png)
