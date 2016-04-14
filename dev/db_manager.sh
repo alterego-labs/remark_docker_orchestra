@@ -3,8 +3,6 @@
 source './variables'
 source './general.sh'
 
-export PG_CONTAINER_NAME='remark-pg'
-
 function pg_run_container {
   if [ ! -d "$DIRECTORY" ]; then
     mkdir -p $PG_LOCAL_DATA
