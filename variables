@@ -1,0 +1,5 @@
+PWD = `pwd`
+
+export REMARK_API_PATH='/vagrant/remark_api'
+export PG_LOCAL_DATA='/var/lib/postgresql/data'
+
