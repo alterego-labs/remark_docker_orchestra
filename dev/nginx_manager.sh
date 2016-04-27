@@ -8,6 +8,7 @@ function nginx_run_container {
     --name $NGINX_CONTAINER_NAME \
     -v $NGINX_CONF_FOLDER:/etc/nginx:ro -v $NGINX_LOGS_FOLDER:/var/log/nginx \
     --link $API_CONTAINER_NAME:remark-api \
+    --link $WEB_CONTAINER_NAME:remark-web \
     -d -p 8080:80 nginx:1.8.1
 }
 

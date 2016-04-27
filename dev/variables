@@ -1,12 +1,16 @@
 PWD=$(pwd)
 
 export REMARK_API_PATH='/vagrant/remark_api'
+export REMARK_WEB_PATH='/vagrant/remark_web'
 
 export PG_LOCAL_DATA='/var/lib/postgresql/data'
 export PG_CONTAINER_NAME='remark-pg'
 
 export API_CONTAINER_NAME='remark-api'
 export API_IMAGE_NAME='alterego-labs/remark-api'
+
+export WEB_CONTAINER_NAME='remark-web'
+export WEB_IMAGE_NAME='alterego-labs/remark-web'
 
 export NGINX_CONTAINER_NAME='remark-nginx';
 export NGINX_CONF_FOLDER="$PWD/../nginx/conf/";

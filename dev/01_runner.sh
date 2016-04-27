@@ -4,6 +4,7 @@ source './variables'
 source './general.sh'
 source './db_manager.sh'
 source './api_manager.sh'
+source './web_manager.sh'
 source './nginx_manager.sh'
 
 echo "Runner. Step 1. Run PG container..."
@@ -16,5 +17,8 @@ api_run_command "mix ecto.migrate";
 echo "Runner. Step 3. Run API container..."
 api_run_container;
 
-echo "Runnder. Step 4. Run NGINX container..."
+echo "Runner. Step 4. Run WEB container..."
+web_run_container;
+
+echo "Runnder. Step 5. Run NGINX container..."
 nginx_run_container;
