@@ -10,7 +10,7 @@ function web_build_container {
 function web_run_container {
   docker run \
     --name $WEB_CONTAINER_NAME \
-    -d -P -i $WEB_IMAGE_NAME
+    -d -i $WEB_IMAGE_NAME
 }
 
 function web_stop_container {
