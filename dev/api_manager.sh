@@ -11,7 +11,7 @@ function api_run_container {
   docker run \
     --name $API_CONTAINER_NAME \
     --link $PG_CONTAINER_NAME:postgres \
-    -d -i $API_IMAGE_NAME
+    -d -P -i $API_IMAGE_NAME
 }
 
 function api_run_command {
