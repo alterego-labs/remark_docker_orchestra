@@ -8,9 +8,9 @@ source './nginx_manager.sh'
 echo "Stopper. Step 1. Stop API container..."
 api_stop_container;
 
-echo "Stopper. Step 2. Stop WEB container..."
-web_stop_container;
-
+# echo "Stopper. Step 2. Stop WEB container..."
+# web_stop_container;
+#
 echo "Stopper. Step 3. Stop PG container..."
 pg_stop_container;
 
