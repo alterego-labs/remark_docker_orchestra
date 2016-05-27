@@ -1,7 +1,12 @@
 PWD=$(pwd)
 
-export REMARK_API_PATH='/vagrant/remark_api'
-export REMARK_WEB_PATH='/vagrant/remark_web'
+if [ $REMARK_ENV == 'prod' ]; then
+  export REMARK_API_PATH='/opt/remark/remark_api';
+  export REMARK_WEB_PATH='/opt/remark/remark_web';
+else
+  export REMARK_API_PATH='/vagrant/remark_api';
+  export REMARK_WEB_PATH='/vagrant/remark_web';
+fi
 
 export PG_LOCAL_DATA='/var/lib/postgresql/data'
 export PG_CONTAINER_NAME='remark-pg'
